@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jsp/jstl/core"
+	xmlns:pe="http://primefaces.org/ui/extensions" >
+	
+	
+<h:head>
+
+</h:head>
+	
+	 
+	<h:body>
+<ui:composition template="/templates/mainlayout.xhtml">
+
+<ui:define name="title">System Audit Trail Records</ui:define>
+
+<ui:define name="content">
+        <h1>System Audit Trail Records</h1>
+		<h:form id="systemAuditTrailForm">
+		
+		<b>From :</b> 
+		<p:calendar value="#{systemAuditTrailMgmtBean.date1}" id="start1" shownOn="button"/>
+		   
+		<b>To :</b>   
+		<p:calendar value="#{systemAuditTrailMgmtBean.date2}" id="start2"  shownOn="button" />
+		
+		  <p:commandButton action="#{systemAuditTrailMgmtBean.search}" value="Search" update=":systemAuditTrailForm:systemAuditTrailTable" ajax="false"/>
+		     
+		  
+        <p:dataTable id="systemAuditTrailTable" widgetVar="systemAuditTraiVar" var="systemAudit0" value="#{systemAuditTrailMgmtBean.systemAuditTrailDataModel}" rowKey="#{systemAudit0.id}">
+            
+          <p:column id="date" >
+            <f:facet name="header"> Date </f:facet>
+            <h:outputText value="#{systemAudit0.date}" />
+          </p:column>
+          <p:column id="descHeader">
+            <f:facet name="header"> Description </f:facet>
+            <h:outputText value="#{systemAudit0.description}" />
+          </p:column>
+        
+        <p:column id="actorHeader">
+            <f:facet name="header"> ActorUserId </f:facet>
+            <h:outputText value="#{systemAudit0.actorUserId}" />
+          </p:column>
+        </p:dataTable>
+         
+      </h:form>      
+      <p:growl id="growl" showDetail="true" life="1000"/> 
+  </ui:define>  
+  
+	
+</ui:composition>
+</h:body>
+
+
+</html>

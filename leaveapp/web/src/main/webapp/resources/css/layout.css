@@ -1,0 +1,378 @@
+/* Color Info
+#fefdfa [Light Grayish Yellow]  
+#396c84 [Dark Moderate Blue] 
+#f88d00 [Pure Orange]
+#32cd32 [Strong Lime Green] */
+
+body { 
+    background-color: #fefdfa;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 13px; 
+    height: 100%;
+    margin: 0.5em;
+}
+
+button {
+    margin: 1em auto;
+}
+
+h1 {
+    color: #396c84;
+    font-size: 20px;
+    margin: 5px;
+    text-align: left;
+}
+
+img {
+    background: white;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* To set footer to stick at end of page */
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+
+#container {
+    padding-bottom: 20px;
+}
+
+
+#footer {
+   background: #396c84;
+   bottom: 0;
+   color: #fff;
+   height: 20px;
+   left: 0;
+   position: absolute;
+   text-align: center;
+   width: 100%; 
+}
+
+
+/* Setting for menubar */
+.ui-menubar{
+    background: #396c84 !important;
+    margin-top: 0.5em;
+}
+
+/* Setting for menu text */
+.ui-menuitem-text {
+    color: #fff;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: bold;
+    margin: auto 1em;
+}
+     
+/* Setting for hovering state on menu item */
+a.ui-menuitem-link.ui-corner-all.ui-state-hover {
+    background: #f88d00 !important;
+    border-radius: 5px;
+}
+
+/* Setting for submenu background */
+.ui-menu-list {
+    background: #396c84;
+    width: auto !important;
+}
+
+/* Setting for datatable header */
+.ui-datatable-header.ui-widget-header.ui-corner-top {
+    background: #faf5e5;
+    font-family: 'Maven Pro', sans-serif;
+    padding: 10px;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+/* Setting for content datatable */
+.ui-datatable-tablewrapper {
+    margin: auto 10px;
+    padding: 10px 25px 15px;
+    text-align: center;
+}
+
+/* Setting for all table header */
+th {
+    background: #FF9912 !important;
+    color: #fff !important;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 13.5px !important;
+    font-weight: bold;
+}
+
+/* Setting for all datatable content */
+tr.ui-widget-content.ui-datatable-selectable, .ui-datatable-data {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 12px;
+    text-align: center !important;
+}
+
+/* Setting for odd table row */
+tr.ui-widget-content.ui-datatable-odd.ui-datatable-selectable, .ui-datatable-data > .ui-datatable-odd  {
+    background-color: #dfebf1;
+}
+
+/* Setting for even table row hover state */
+tr.ui-widget-content.ui-datatable-even.ui-datatable-selectable.ui-state-hover {
+    background-color: #a8c9d9;
+    font-weight: bold;
+}
+
+/* Setting for odd table row hover state */
+tr.ui-widget-content.ui-datatable-odd.ui-datatable-selectable.ui-state-hover {
+    background-color: #a8c9d9;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Setting for even table row highlight state */
+.ui-widget-content.ui-datatable-even.ui-datatable-selectable.ui-state-highlight > td {
+    background: #fff;
+    color: #000;
+    font-weight: normal;
+}
+
+/* Setting for odd table row highlight state */
+.ui-widget-content.ui-datatable-odd.ui-datatable-selectable.ui-state-highlight > td {
+    background-color: #dfebf1;
+    color: #000;
+    font-weight: normal;
+}
+
+/* Setting for creating space between buttons */
+.ui-button {
+    margin: auto 3px;
+}
+
+/* Setting for button */
+.ui-button-text {
+    background-color: #32cd32;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+/* Setting for dialog box */
+.ui-dialog {
+    background: #fefdfa !important;
+    font-family: 'Maven Pro', sans-serif;
+} 
+
+/* Setting for dialog titlebar */
+.ui-dialog-titlebar {
+    background: #FF9912 !important;
+    color: #fff !important;
+}
+
+/* Settings to hide panelgrid table border and background */
+.ui-panelgrid tr, .ui-panelgrid td {
+    border: 0 !important;
+    background: none !important;
+}
+
+/* Setting for widget header */
+tr.ui-widget-header {
+    color: #396c84 !important;
+    text-transform: uppercase;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;  
+}
+
+/* Setting for field label in widget */
+table.ui-panelgrid.ui-widget > tbody > tr.ui-widget-content > td {
+    font-family: 'Maven Pro', sans-serif;
+    text-align: right ;
+}
+
+/* Setting for input fields */
+.ui-widget input, .ui-inputfield.hasDatePicker {
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: 'Maven Pro', sans-serif;
+    width: 139px;
+    padding: 1px 0.5em;
+    margin: auto 3px;
+}
+
+/* Setting for selectonemenu field in form */
+.ui-selectonemenu {
+	border: 1px solid gray !important;
+    font-family: 'Maven Pro', sans-serif;
+    text-align: left;
+    text-transform: capitalize;
+    width: 140px !important;
+}
+
+/* Setting for selectonemenu trigger */
+.ui-selectonemenu-trigger.ui-corner-right {
+    background: #fff ;
+    border-left: 1px solid gray !important;
+}
+
+/* Setting to capitalize list item for selectonemenu */
+.ui-selectonemenu-list-item {
+    text-transform: capitalize;
+}
+
+/* Setting for highlight state for selectonemenu */
+.ui-selectonemenu-list-item.ui-state-highlight {
+   background: #396c84 !important;
+}
+
+/* Setting for selected tab */
+.ui-tabs-selected.ui-state-active > a {
+	background: #fefdfa !important;	
+	color: #f88d00 !important;
+	font-weight: bold !important;
+}
+
+/* Setting for normal tab */
+.ui-state-default > a {
+	color: #f88d00 !important;
+}
+
+/* Setting for hover tab */
+.ui-state-hover > a {
+    background: #f88d00 !important; 
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+/* Setting for datepicker */
+.ui-datepicker-header, .ui-datepicker-unselectable  {
+    background: #fefdfa !important;
+}
+
+/* Setting for dates background */
+a.ui-state-default {
+	background: none !important;
+}
+
+/* Setting for today datepicker */
+a.ui-state-default.ui-state-highlight {
+	background: none !important;
+	color: #396c84 !important;
+	font-weight: bold;
+}
+
+/* Setting for selected and hover datepicker */
+a.ui-state-default.ui-state-active, a.ui-state-default.ui-state-highlight.ui-state-active, a.ui-state-default.ui-state-hover   {
+    background: #396c84 !important;
+    color: #fff !important;
+}
+
+
+/* Setting for error message text */
+.ui-messages-error-summary {
+   text-transform: capitalize;
+   font-family: 'Maven Pro', sans-serif;
+}
+
+/* Setting for myprofile panelgrid page */
+.ui-panelgrid-header > .ui-widget-header > td  {
+ 	width: 1000px !important;
+}
+
+/* Setting for data not found */
+.ui-datatable-empty-message {
+	text-align: center;
+}
+
+/* Setting for Search titlebar */
+.ui-panel-titlebar {
+	background: #f88d00 !important;
+	border-radius: 10px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+/* Setting for titlebar toggle button */
+.ui-panel-titlebar-icon.ui-corner-all.ui-state-default {
+	background: #fff !important;
+}
+
+/* Setting for panel and datatable  */
+.ui-panel, .ui-datatable {
+	background: #faf5e5;
+	border: 1px solid #f1e4ba;
+	border-radius: 10px;
+	margin: 10px 5px;
+}
+
+/* Setting for paginator */
+.ui-paginator {
+	background: none !important;
+}
+
+/* Setting for paginator background */
+.ui-paginator-first, .ui-paginator-prev, .ui-paginator-page, .ui-paginator-next, .ui-paginator-last {
+	background: #fff !important;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+/* Setting for scrollable datatable */
+.ui-datatable-scrollable-header-box, .ui-datatable-scrollable-body {
+	width: 100%;
+}
+
+/* Setting for scrollpanel */
+.ui-scrollpanel, .ui-scrollpanel-content {
+	background: #faf5e5 !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/* Setting to centralize button in panelgrid */
+.ui-panelgrid-footer > tr.ui-widget-header > td, tr.ui-widget-content > td {
+	text-align: center;
+}
+
+/* Setting to centralize panelgrid */
+.ui-panelgrid {
+    margin: auto;
+    padding: 25px;
+}
+
+/* Setting for hiding content border */
+.ui-tabs.ui-widget-content, .ui-tabs.ui-tabs-top .ui-tabs-nav.ui-widget-header {
+	border: none !important;
+}
+
+/* Setting for tab borders */
+.ui-tabs-panel.ui-widget-content.ui-corner-bottom {
+	border: 1px solid #DDDDDD;
+	border-radius: 3px;
+}
+
+/* Setting for picklist caption */
+.ui-picklist-caption {
+	background: #396c84;
+	color: #fff;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+/* Setting for picklist list */
+.ui-picklist-list {
+	text-align: center;
+	font-size: 12px;
+}
+
+/* Setting for picklist highlight  */
+.ui-picklist-item.ui-state-highlight {
+	background: #dfebf1;
+    color: #000;
+    font-weight: normal;
+	
+}
+
+
